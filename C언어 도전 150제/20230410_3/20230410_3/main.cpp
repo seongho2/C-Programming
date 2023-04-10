@@ -12,7 +12,7 @@ void main()
 	printf("x값을 대입해주세요: \n", x);
 	scanf("%d", &x);
 	z = x - y;
-	printf("x값에 5를 뺴면: %d \n", z);
+	printf("x값에 5를 빼면: %d \n", z);
 	scanf("%d", &z);
 
 }
