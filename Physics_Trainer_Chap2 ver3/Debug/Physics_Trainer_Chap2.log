@@ -1,3 +1,2 @@
 ﻿  Physics_Trainer_Chap2.cpp
-C:\Users\user\Desktop\Physics_Trainer_Chap2 ver3 (6)\Physics_Trainer_Chap2.cpp(643,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Physics_Trainer_Chap2.vcxproj -> C:\Users\user\Desktop\Physics_Trainer_Chap2 ver3 (6)\Debug\Physics_Trainer_Chap2.exe
+  Physics_Trainer_Chap2.vcxproj -> C:\Users\user\Desktop\Physics_Trainer_Chap2 ver3\Debug\Physics_Trainer_Chap2.exe

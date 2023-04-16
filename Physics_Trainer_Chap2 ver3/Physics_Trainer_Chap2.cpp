@@ -587,10 +587,10 @@ void Excersize_2_27(int solution, int answer)
 
 void Excersize_2_28(int solution, int answer)
 {
-	int speed = 49;
+	double speed = 49;
 	double g = 9.80;      // g는 gravitational_acceleration(중력 가속도).
-	int time2 = 0;      // time2 는 물체가 다시 지면에서 떨어지는 데 걸리는 시간
-	int time1 = 0;
+	double time2 = 0;      // time2 는 물체가 다시 지면에서 떨어지는 데 걸리는 시간
+	double time1 = 0;
 	double H = 0;          // H는 최고 높이.
 	double Δy = 0;
 	Δy = H;
@@ -614,7 +614,7 @@ void Excersize_2_28(int solution, int answer)
 		printf("최대 높이 공식은 : 최고 높이 속도의 제곱 - 던졌을때 속도의 제곱 = 2 * 가속도 * Δy \n\n");
 		printf("최고 높이 = 던졌을때 속도제곱 / 2 * 가속도 \n\n");
 		H = pow(speed, 2) / (g * 2);
-		printf("최고 높이 %0.1lf m = 던졌을때 속도제곱 %d m/s / (2 * 가속도 %.2lf) m/s^2\n\n", H, speed, g);
+		printf("최고 높이 %0.1lf m = 던졌을때 속도제곱 %.0lf m/s / (2 * 가속도 %.2lf) m/s^2\n\n", H, speed, g);
 
 	}
 
@@ -623,7 +623,7 @@ void Excersize_2_28(int solution, int answer)
 
 		printf("=========================   정 답   =============================\n\n");
 
-		printf("최고 높이는%0.1lf M\n\n", H);
+		printf("최고 높이는%0.1lf m\n\n", H);
 
 
 
@@ -641,10 +641,10 @@ void Excersize_2_28(int solution, int answer)
 		printf("최고 높이의 속도은 0이므로 공식을 최대 높이 도달시간으로 만들면: \n\n");
 		printf("최고 높이 도달 시간 = 던졌을때 속도 / 가속도 \n\n");
 		time1 = speed / g;
-		printf("최고 높이 도달시간 %d s= 던졌을때 속도 %d m/s / 중력 가속도 %.2lf m/s^2\n", time1, speed, g);
+		printf("최고 높이 도달시간 %.0lf s= 던졌을때 속도 %.0lf m/s / 중력 가속도 %.2lf m/s^2\n", time1, speed, g);
 		printf("물체가 다시 지면에서 떨어지는 데 걸리는 시간은 최고점 도달 시간에 * 2 한 값이므로: \n");
 		time2 = time1 * 2;
-		printf("최고 높이 도달시간 %d s * 2 = 물체가 다시 지면에서 떨어지는 데 걸리는 시간 %d s\n\n", time1, time2);
+		printf("최고 높이 도달시간 %.0lf s * 2 = 물체가 다시 지면에서 떨어지는 데 걸리는 시간 %.0lf s\n\n", time1, time2);
 		printf("=================================================================\n\n");
 	}
 
@@ -653,7 +653,7 @@ void Excersize_2_28(int solution, int answer)
 
 		printf("=========================   정 답   =============================\n\n");
 
-		printf("최고 높이 도달시간 %d s * 2 = 물체가 다시 지면에서 떨어지는 데 걸리는 시간 %d s\n\n", time1, time2);
+		printf("최고 높이 도달시간 %.0lf s * 2 = 물체가 다시 지면에서 떨어지는 데 걸리는 시간 %.0lf s\n\n", time1, time2);
 
 
 		printf("=================================================================\n");
