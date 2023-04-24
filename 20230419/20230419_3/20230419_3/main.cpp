@@ -6,35 +6,60 @@
 
 void main()
 {
-    double x, y;
-    int op;
-    srand(time(NULL)); 
+	int x, y, op, answer, i;
+	srand(time(NULL));
 
-    x = rand() % 10;
-    y = rand() % 10;
+	while (1) {
+		x = rand() % 10;
+		y = rand() % 10;
+		op = rand() % 4;
+		if (op == 0)
+		{
+			printf("%d + %d=", x, y);
+			scanf("%d", &answer);
+			if (x + y == answer)
+				printf("¸Â¾Ñ½À´Ï´Ù.\n");
+			else
+				printf("Æ²·È½À´Ï´Ù\n");
+		}
 
-    op = rand() % 5;
+		if (op == 1)
+		{
+			printf("%d - %d=", x, y);
+			scanf("%d", &answer);
+			if (x - y == answer)
+				printf("¸Â¾Ñ½À´Ï´Ù.\n");
+			else
+				printf("Æ²·È½À´Ï´Ù\n");
+		}
 
-    if (op == 0) {
-        printf("%lf + %lf = %lf", x, y, x + y);
-    }
-    else if (op == 1) {
-        printf("%lf - %lf = %lf", x, y, x - y);
-    }
-    else if (op == 2) {
-        printf("%lf * %lf = %lf", x, y, x * y);
-    }
-    else if (op == 3) 
-    {
-        printf("%lf / %lf = %lf", x, y, x / y);
-    }
-    else if (op == 4)
-    {
-        printf("%lf % %lf = %lf", x, y, x % y);
-    }
-    else
-    {
-        printf("error");
-    }
+		if (op == 2)
+		{
+			printf("%d * %d=", x, y);
+			scanf("%d", &answer);
+			if (x * y == answer)
+				printf("¸Â¾Ñ½À´Ï´Ù.\n");
+			else
+				printf("Æ²·È½À´Ï´Ù\n");
+		}
+
+		if (op == 3)
+		{
+			printf("%d / %d=", x, y);
+			scanf("%d", &answer);
+			if (x / y == answer)
+				printf("¸Â¾Ñ½À´Ï´Ù.\n");
+			else
+				printf("Æ²·È½À´Ï´Ù\n");
+		}
+		if (op == 4)
+		{
+			printf("%d % %d=", x, y);
+			scanf("%d", &answer);
+			if (x / y == answer)
+				printf("¸Â¾Ñ½À´Ï´Ù.\n");
+			else
+				printf("Æ²·È½À´Ï´Ù\n");
+		}
+	}
 }
-
