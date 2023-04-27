@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>Reading
 #define _USE_MATH_DEFINES     // M_PI를 사용하기 위해서 추가
 #include <math.h>
 
@@ -37,15 +37,18 @@ void Excersize_2_28(int solution, int answer)
 
 		printf("(a) 이 물체가 올라갈 수 있는 최고높이 H는 얼마인가? \n\n");
 
-		printf("최고 높이의 대한 공식을 구하세요. \n\n");
-		printf("최고 높이의 대한 공식은 최고 높이 속도의 제곱 - 던졌을때 속도의 제곱 = 2 * 가속도 * 최고 높이 - 시작 높이 \n\n");
+		printf("이 문제를 풀려면 최대 높이 H를 알아야 합니다.\n\n");
+		printf("H를 알려면 최대 높이의 대한 공식을 알아야 합니다. \n\n");
+		printf("최고 높이의 대한 공식은 최고 높이 속도의 제곱 - 시작 속도의 제곱 = 2 * 가속도 * (최고 높이 - 시작 높이) \n\n");
 		printf("최고 높이에서의 속도는 0m/s 입니다. \n\n");
+		printf("왜냐하면 최고 높이에서 물체가 멈추기 때문입니다.\n\n");
 		printf("v^2 - v0^2 = 2 * a * Δy \n\n");
-		printf("최고 높이에 관한 식으로 표현하면 최고 높이 = 던졌을때 속도제곱 / 2 * 가속도 \n\n");
+		printf("최고 높이에 관한 식으로 표현하면 최고 높이 = 시작 속도제곱 / 2 * 가속도 \n\n");
 		printf("Δy = v0^2 / 2 * a \n\n");
-		H = pow(speed, 2) / (g * 2);
-		printf("최고 높이 %0.1lf m = 던졌을때 속도제곱 %.0lf m/s / (2 * 가속도 %.2lf) m/s^2\n\n", H, speed, g);
-
+		printf("(H - 0) = v0^2 / 2 * a \n\n");
+		H = pow(speed, 2) / (g * 2);		//pow (a,b) = a^b
+		printf("최고 높이 H = 시작 속도제곱 %.0lf m/s / (2 * 가속도 %.2lf) m/s^2\n\n", speed, g);
+		printf("%0.1lf m = %.0lf m/s / (2 * %.2lf) m/s^2\n\n", H, speed, g);
 	}
 
 	if (answer == SHOW)
@@ -53,7 +56,7 @@ void Excersize_2_28(int solution, int answer)
 
 		printf("=========================   정 답   =============================\n\n");
 
-		printf("최고 높이는%0.1lf m\n\n", H);
+		printf("최고 높이 H는 %0.1lf m\n\n", H);
 
 
 
@@ -66,15 +69,19 @@ void Excersize_2_28(int solution, int answer)
 		printf("=========================   풀 이   =============================\n\n");
 
 		printf("(b) 이 물체가 다시 지면에서 떨어지는 데 걸리는 시간은 얼마인가? \n\n");
-		printf("먼저 최대 높이 도달시간 공식을 구하세요. \n\n");
-		printf("최대 높이 도달시간 공식은 : 최고 높이의 속도 = 던졌을때 속도 + (가속도 * 최고 높이 도달 시간) \n\n");
+
+		printf("물체가 다시 지면에 떨어지는데 걸리는 시간을 알려면, \n\n");
+		printf("최대 높이 도달시간 공식을 알아야 합니다. \n\n");
+		printf("최대 높이 도달시간 공식은 : 최고 높이의 속도 = 시작 속도 + (가속도 * 최고 높이 도달 시간) \n\n");
 		printf("v = v0 + a * t \n\n");
 		printf("최고 높이의 속도은 0m/s이므로 공식을 최대 높이 도달시간으로 만들면: \n\n");
-		printf("최고 높이 도달 시간 = 던졌을때 속도 / 가속도 \n\n");
+		printf("최고 높이 도달 시간 = 시작 속도 / 가속도 \n\n");
 		printf("t = v0 / a \n\n");
 		time1 = speed / g;
-		printf("최고 높이 도달시간 %.0lf s= 던졌을때 속도 %.0lf m/s / 중력 가속도 %.2lf m/s^2\n\n", time1, speed, g);
-		printf("물체가 다시 지면에서 떨어지는 데 걸리는 시간은 최고점 도달 시간에 * 2 한 값이므로: \n\n");
+		printf("최고 높이 도달시간 %.0lf s= 시작 속도 %.0lf m/s / 중력 가속도 %.2lf m/s^2\n\n", time1, speed, g);
+		printf("물체가 다시 지면에 떨어지는데 걸리는 시간은\n\n");
+		printf("최대 높이까지에 시간에서 다시 지면으로 떨어지는 시간을 더해줘야 하기 때문에\n\n");
+		printf("최대 높이 도달시간에 * 2 한 값으로 \n\n");
 		time2 = time1 * 2;
 		printf("최고 높이 도달시간 %.0lf s * 2 = 물체가 다시 지면에서 떨어지는 데 걸리는 시간 %.0lf s\n\n", time1, time2);
 		printf("=================================================================\n\n");
