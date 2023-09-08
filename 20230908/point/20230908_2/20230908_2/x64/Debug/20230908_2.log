@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\user\Desktop\20230908_2\20230908_2\main.cpp(8,7): error C2374: 'ptr': 재정의. 여러 번 초기화했습니다.
+C:\Users\user\Desktop\20230908_2\20230908_2\main.cpp(7,7): message : 'ptr' 선언을 참조하십시오.
+C:\Users\user\Desktop\20230908_2\20230908_2\main.cpp(9,8): error C2374: 'ptr': 재정의. 여러 번 초기화했습니다.
+C:\Users\user\Desktop\20230908_2\20230908_2\main.cpp(7,7): message : 'ptr' 선언을 참조하십시오.
